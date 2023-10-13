@@ -1,0 +1,48 @@
+footer{
+    padding-top: 25px;
+    margin-top: 100px;
+    background-color: #061121;
+    .footer-contact-area{
+        margin-bottom: 25px;
+        p.logo{
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        p.email, p.number{
+            color: white;
+            
+        }
+    }
+    .footer-content{
+        margin-bottom: 25px;
+        p.uinversity{
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li{
+                color: white;
+                font-size: 14px;
+                padding-bottom: 15px;
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(196, 208, 218);
+                }
+            }
+        }
+    }
+    .copyright{
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        background-color: #061121;
+        padding:  10px 0 10px 0;
+        margin: 0;
+        border-top: 1px solid rgba(185, 182, 182, 0.795);
+    }
+}

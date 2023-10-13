@@ -1,0 +1,157 @@
+.dashboard-heading{
+  font-size: 30px;
+  font-weight: 700;
+}
+.owl-container{
+  margin: 0 20px;
+  .owl-theme {
+    
+    .item {
+      height: 170px;
+      background-color: #091527;
+      display: flex;
+      align-items: flex-end;
+      &:hover{
+        cursor: pointer;
+        border: 2px solid white;
+      }
+      .item-container {
+          background-color: #3c3264;
+        width: 100%;
+        height: 83%;
+        border-radius:5px ;
+        .img-container {
+          position: relative;
+          
+          img {
+            position: absolute;
+            top: -30px;
+            left: 130px;
+            width: 60px;
+            z-index: 9999;
+          }
+        }
+        h1 {
+          margin: 40px 0 10px 0;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          color: white;
+          span{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+//price chart
+.chart-container {
+  margin-top: 21px;
+  background-color: #3c3264;
+  color: rgb(119, 170, 214);
+  padding: 20px 20px 0 20px;
+  .crypto-details {
+    .img-price-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .img-price {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 10px;
+        }
+        p {
+          color: white;
+          margin-bottom: 0;
+          font-size: 25px;
+        }
+      }
+      .trade-btn{
+          button{
+              padding: 5px 20px;
+              background-color: #1199fa;
+              border-radius: 5px;
+              border: none;
+              a{
+                  text-decoration: none;
+                  color: white;
+              }
+              &:focus{
+                  padding: 4px 18px;
+              }
+              &:hover{
+                  opacity: 0.8;
+              }
+          }
+      }
+    }
+    .percentage-change {
+      p {
+        span {
+          color: white;
+          font-weight: 600;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+  .detail-fields-container {
+    margin-top: 40px;
+    .detail-fields {
+      .key {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: white
+      }
+      .value {
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+//trending coins section
+.trending-coins-container {
+  background-color: #3c3264;
+  padding-bottom: 10px;
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    i {
+      color: white;
+      font-size: 15px;
+    }
+  }
+  table {
+    background-color: white;
+    thead,
+    tbody {
+      th {
+        text-align: left;
+        color: black;
+      }
+      tr {
+        td {
+          color: black;
+          text-align: left;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          img {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

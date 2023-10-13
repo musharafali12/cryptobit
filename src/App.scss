@@ -1,0 +1,47 @@
+body{
+    background-color: #091527;
+}
+
+.page-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    p.title{
+        margin-bottom: 0;
+        color: #1199fa;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    h1{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    p{
+        max-width: 700px;
+        text-align: center;
+        color: white;
+    }
+}
+
+/* App.css */
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-container {
+    flex: 1; /* Allow the container to take remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allow the main content to grow and take remaining space */
+  }
+  

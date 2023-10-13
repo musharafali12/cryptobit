@@ -1,0 +1,175 @@
+
+.heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    p.title{
+        margin-bottom: 0;
+        color: #1199fa;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    h1{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 0;
+    }
+    p{
+        max-width: 700px;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+
+table{
+    width: 95%;
+    margin: auto;
+    background-color: #091527;
+    thead{
+        
+        th{
+            color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(202, 196, 196, 0.5);
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 1px solid rgba(202, 196, 196, 0.5);
+            .img-name-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img-container{
+                    margin-right: 10px;
+                }
+            }
+            td{
+                color: white;
+                padding: 12px 20px;
+                font-size: 12px;
+                font-weight: 600;
+                text-align: center;
+                .name-container{
+                    p{
+                        margin-bottom: 0;
+                    }
+                    .coin-name{
+                        font-size: 10px;
+                        font-weight: 600;
+                        color: rgb(112, 110, 110);
+                    }
+                }
+                .fa-star{
+                    cursor: pointer;
+                    
+                }
+            }
+            .trading-btn{
+                button{
+                    padding: 5px 20px;
+                    background-color: #1199fa;
+                    border-radius: 5px;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:focus{
+                        padding: 4px 18px;
+                    }
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .watchlist-placeholder{
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                padding: 100px 0;
+            }
+            
+        }
+    }
+}
+
+
+//Responsive Area
+@media screen and (max-width:575px) {
+    table{
+
+        tbody{
+            tr{
+                .mc-data{
+                    display: none;
+                }
+            }
+        }
+        
+        thead{
+            .mc-data-heading{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:434px) {
+    table{
+        tbody{
+            tr{
+                td{
+                    padding: 12px 10px;
+                }
+                .trading-btn{
+                    button{
+                        padding: 3px 10px;
+                        &:focus{
+                            padding: 2px 8px;
+                        }
+                    }
+                }
+            }
+        }
+        thead{
+            th{
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:379px) {
+    table{
+        tbody{
+            tr{
+                td{
+                    padding: 12px 3px;
+                    font-size: 10px;
+                    .trading-btn{
+                        button{
+                            padding: 3px 10px;
+                            &:focus{
+                                padding: 2px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        thead{
+            th{
+                padding: 10px 10px;
+            }
+        }
+    }
+}

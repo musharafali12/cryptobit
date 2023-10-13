@@ -6,9 +6,27 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.0.0",
+    "bcrypt": "^5.1.1",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "chart.js": "^4.4.0",
+    "crypto-browserify": "^3.12.0",
+    "formik": "^2.4.3",
+    "framer-motion": "^10.16.4",
+    "owl.carousel": "^2.3.4",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +52,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "browser": {
+    "fs": false
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.15.0"
   }
 }

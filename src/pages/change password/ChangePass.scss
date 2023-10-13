@@ -1,0 +1,61 @@
+.change-pass-container{
+    background-color: white;
+    width: 500px;
+    padding: 30px 0;
+    border-radius: 5px;
+    margin: 50px auto 0 auto;
+    .old-pass-container, .new-pass-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        label{
+            font-size: 12px;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        input{
+            border: 1px solid #9797c8;
+            border-radius: 5px;
+            padding: 5px 0;
+            &::placeholder{
+                font-size: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+    .submit-btn{
+        width: 100%;
+        text-align: center;
+        button{
+            border: none;
+            color: white;
+            background-color: rgba(104, 104, 175, 0.692);
+            font-size: 10px;
+            padding: 8px 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+//Responsive Area
+@media screen and (max-width:566px) {
+    .change-pass-container{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:466px) {
+    .change-pass-container{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .change-pass-container{
+        width: 250px;
+    }
+}

@@ -1,0 +1,128 @@
+.invoice-heading{
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    color: #091527;
+    width: 70%;
+    margin: 50px auto 50px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.invoice-container{
+    width: 80%;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    .invoice{
+        width: 100%;
+        .top-img-container{
+           width: 100%;
+           display: flex;
+            img{
+             width: 50%;
+             height: 150px;
+            }
+        }
+        .invoice-details{
+            width: 90%;
+            margin: auto;
+            .company-name{
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 50px;
+                font-weight: 600;
+                text-decoration: underline;
+                }
+            }
+            .customer-details{
+                width: 100%;
+                margin-bottom: 50px;
+                .name, .email, .usd-amount, .crypto-amount{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+            table{
+                width: 100%;
+                margin-bottom: 50px;
+                .t-heading{
+                    width: 100%;
+                    text-align: center;
+                    padding: 15px;
+                }
+                tr{
+                    background-color: #091527;
+                    color: white;
+                    border: 1px solid white;
+                    td{
+                        border-right: 1px solid white;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.confirm-btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    button{
+        border: none;
+                border-radius: 5px;
+                background-color: #1e77f0;
+                padding: 5px 20px;
+                color: white;
+    }
+}
+
+//On-purchase message
+@keyframes spinner{
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }
+
+.on-purchase-message{
+    width: 80%;
+    margin: 150px auto 0 auto;
+    p{
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+    }
+    .thanks-msg{
+        font-size: 25px;
+    }
+    .spinner-container{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .spinner{
+            content: '';
+                height: 40px;
+                width: 40px;
+                border: 3px solid #1e77f0;
+                border-top-color: white;
+                border-radius: 50%;
+                animation-name: spinner;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.converter-container{
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 0 50px 0;
+    h1{
+        text-align: center;
+    }
+    .currency-dropdown-container{
+        width: 50%;
+        height: 34px;
+        overflow: hidden;
+        margin: auto;
+        background-color: white;
+        border-radius: 5px;
+        transition: all 500ms;
+        .dropdown{
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                
+                li{
+                    padding: 8px 20px;
+                    border-bottom: 1px solid rgba(177, 174, 174, 0.671);
+                    font-size: 12px;
+                    cursor: pointer;
+                    img{
+                        margin-right: 10px;
+                    }
+                    &:hover{
+                        background-color: rgba(194, 191, 191, 0.685);
+                    }
+                    .selection-title{
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    
+                }
+                .show-li{
+                    display: block;
+                }
+                .hide-li{
+                    display: none;
+                }
+            }
+        }
+    }
+    .open-dropdown{
+        height: 400px;
+        overflow: auto;
+        transition: all 500ms ease-in-out;
+    }
+
+    //purchase panel
+    .purchase-panel-container{
+        width: 70%;
+        margin: 50px auto 0 auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        label{
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .crypto-container, .usd-container{
+            display: flex;
+            align-items: center;
+            border: 1px solid #1e77f0;
+            padding-right: 5px;
+            background-color: white;
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: 25px;
+            
+            input{
+                outline: none;
+                border: none;
+                border-right: 1px solid #1e77f0;
+                border-radius: 3px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-right: 5px;
+                padding: 6px 0 6px 6px;
+                width: 100%;
+                
+            }
+            .fa-dollar-sign{
+                color: #1e77f0;
+            }
+        }
+        .buy-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            button{
+                border: none;
+                border-radius: 5px;
+                background-color: #1e77f0;
+                padding: 5px 20px;
+                color: white;
+            }
+        }
+    }
+}
+
+//Open close currenncy selection dropdown
+
+
+//Responsive Area
+@media screen and (max-width:475px) {
+    .converter-container{
+        .currency-dropdown-container{
+            width: 70%;
+        }
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .converter-container{
+        .currency-dropdown-container{
+            .dropdown{
+                ul{
+                    li{
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

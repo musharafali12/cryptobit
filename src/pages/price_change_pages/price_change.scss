@@ -1,0 +1,229 @@
+.price-change-container {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  h1.price-change-heading {
+    color: black;
+    margin: 0 0 0 0;
+    padding: 50px 0 0 10px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  p.data-provider {
+    color: red;
+    padding: 0 0 0 10px;
+    font-size: 13px;
+    span {
+      font-weight: 600;
+      color: black;
+    }
+  }
+  .chart-container {
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(119, 170, 214);
+    padding: 20px 20px 0 20px;
+    .crypto-details {
+      .img-price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .img-price {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 10px;
+          }
+          p {
+            color: black;
+            margin-bottom: 0;
+            font-size: 25px;
+          }
+        }
+        .trade-btn{
+            button{
+                padding: 5px 20px;
+                background-color: #1199fa;
+                border-radius: 5px;
+                border: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                &:focus{
+                    padding: 4px 18px;
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+      }
+      .percentage-change {
+        p {
+          span {
+            color: black;
+            font-weight: 600;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+    .detail-fields-container {
+      margin-top: 40px;
+      .detail-fields {
+        .key {
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 0;
+          color: rgb(100, 99, 99);
+        }
+        .value {
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  //purchase panel
+  .purchase-panel-container {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+    h1 {
+      color: black;
+      text-align: center;
+    }
+
+    label {
+      color: black;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .crypto-container,
+    .usd-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #1e77f0;
+      padding-right: 5px;
+      background-color: white;
+      border-radius: 3px;
+      width: 100%;
+      margin-bottom: 25px;
+
+      input {
+        outline: none;
+        border: none;
+        border-right: 1px solid #1e77f0;
+        border-radius: 3px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right: 5px;
+        padding: 6px 0 6px 6px;
+        width: 100%;
+      }
+      .fa-dollar-sign {
+        color: #1e77f0;
+      }
+    }
+    .buy-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      button {
+        border: none;
+        border-radius: 5px;
+        background-color: #1e77f0;
+        padding: 5px 20px;
+        color: white;
+      }
+    }
+  }
+  .trending-coins-container {
+    background-color: white;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+      margin: 20px 0 20px 0;
+      padding-top: 20px;
+      padding-left: 20px;
+      i {
+        color: blue;
+        font-size: 15px;
+      }
+    }
+    table {
+      background-color: white;
+      thead,
+      tbody {
+        th {
+          text-align: left;
+          color: black;
+        }
+        tr {
+          td {
+            color: black;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            img {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//Responsive Area
+@media screen and (max-width:434px) {
+    .price-change-container{
+        .chart-container{
+            .crypto-details{
+                .img-price-container{
+                    .trade-btn{
+                        button{
+                            padding: 3px 10px;
+                            a{
+                                font-size: 14px;
+                            }
+                            &:focus{
+                                padding: 2px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:379px) {
+    .price-change-container{
+        .chart-container{
+            .crypto-details{
+                .img-price-container{
+                    .trade-btn{
+                        button{
+                            padding: 1px 10px;
+                            a{
+                                font-size: 12px;
+                            }
+                            &:focus{
+                                padding: 2px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

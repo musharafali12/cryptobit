@@ -1,0 +1,179 @@
+//side image animation
+@keyframes hero-sideimg{
+    from{
+      transform: translateY(0px);
+    }
+    to{
+      transform: translateY(-15px);
+    }
+}
+
+.register-container{
+    
+    .left-side{
+        img{
+            margin-top: 100px;
+            animation-name: hero-sideimg;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+    }
+    .right-side{
+        margin: 60px auto 0 auto;
+        width: 80%;
+        border: 1px solid #1f427780;
+            border-radius: 5px;
+            background-color: #1f427780;
+        form{
+            margin: 40px;
+           .form-heading{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 25px;
+            h1{
+                color: white;
+                font-size: 25px;
+            }
+           }
+        }
+        .username-name, .password-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .username, .name, .email-container, .password, .confirm-password{
+            display: flex;
+            background-color: white;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 10px 0 10px 10px;
+            border-radius: 5px;
+            width: 48%;
+            input{
+                border: none;
+                outline: none;
+                width: 100%;
+                padding-left: 10px;
+                &::placeholder{
+                    font-size: 12px;
+                }
+            }
+        }
+        .email-container{
+            width: 100% !important;
+        }
+        .submit-btn{
+            width: 100%;
+            button{
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: white;
+                background-color: rgba(36, 36, 172, 0.705);
+                border: none;
+                width: 100%;
+            }
+        }
+        .sign-in{
+            width: 100%;
+            text-align: center;
+            p{
+                color: white;
+                font-weight: 700;
+                a{
+                    color: white;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+//Responsive Area
+@media screen and (max-width:991px) {
+    .left-side{
+        display: none;
+    }
+}
+@media screen and (max-width:575px) {
+    .username-name, .password-container{
+        flex-direction: column;
+    }
+    .username, .name, .email-container, .password, .confirm-password{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:428px) {
+    .register-container{
+        .right-side{
+            width: 90%;
+            form{
+                margin:20px;
+            }
+        }
+    }
+}
+
+//Email verification
+@keyframes rotate-spinner{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.verification-container{
+    width: 500px;
+    background-color: white;
+    margin: 100px auto 0 auto;
+    border-radius: 5px;
+    .before-verification, .after-verification{
+        padding: 50px 0;
+        .title{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }
+        .message{
+            font-size: 12px;
+            text-align: center;
+        }
+        .spinner-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .spinner{
+                height: 50px;
+                width: 50px;
+                border: 3px solid blue;
+                border-top-color: white;
+                border-radius: 50%;
+                animation-name: rotate-spinner;
+                animation-duration: 500ms;
+                animation-iteration-count: infinite;
+            }
+        }
+        .verified-icon{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .icon{
+                height: 50px;
+                width: 50px;
+                background-color: rgb(12, 167, 12);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
